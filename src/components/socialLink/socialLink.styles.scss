@@ -1,0 +1,15 @@
+.badge {
+  transition: all 0.3s ease-in-out;
+  margin: 20px;
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(156, 219, 235);
+    text-decoration: none;
+  }
+  &:hover {
+    transform: translateY(-5px);
+  }
+}

@@ -1,3 +1,4 @@
+@import "../../_styles/mixins";
 .hero-container {
   padding-top: 150px;
   display: flex;
@@ -54,5 +55,22 @@
         object-fit: contain;
       }
     }
+  }
+
+  @include small {
+      height: 80vh;
+      .hero{
+          &__left {
+              width: 90%;
+              margin: auto;
+
+              &__greet, &__name, .typewriter{
+                  font-size: 1.5rem;
+              }
+          }
+          &__right {
+              display: none;
+          }
+      }
   }
 }

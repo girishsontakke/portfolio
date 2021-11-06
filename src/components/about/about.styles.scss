@@ -1,0 +1,54 @@
+@import "../../_styles/mixins";
+.about {
+    padding: 50px 15vw;
+    height: 40vh;
+    display: flex;
+
+    &__left{
+        width: 50%;
+        img{
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid gray;
+            box-shadow: 7px 6px 5px -2px rgba(179,172,172,0.66);;
+            margin: 20px;
+        }
+    }
+
+    &__right{
+        margin-top: 50px;
+        &__heading, &__desc {
+            width: 80%;
+            margin: auto;
+        }
+        &__heading {
+            text-align: center;
+            padding: 20px;
+            font-weight: 300;
+            font-size: 3.5rem;
+            line-height: 1.2;
+        }
+        &__desc {
+            text-align: center;
+            font-weight: 300;
+            font-size: 1.2rem;
+        }
+    }
+
+    @include small {
+        flex-direction: column;
+        height: fit-content;
+        padding: 50px 0px;
+        &__left {
+            width: 100vw;
+            display: grid;
+            place-items: center;
+        }
+        &__right {
+            margin-top: 10px;
+        }
+    }
+    
+}

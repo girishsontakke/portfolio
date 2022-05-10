@@ -1,8 +1,9 @@
 import "./App.css";
 import Hero from "./components/hero/hero.component";
 import About from "./components/about/about.component";
+import React from "react";
 
-function App() {
+const App: React.FC<{}> = () => {
   return (
     <div className="App">
       <Hero />

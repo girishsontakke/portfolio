@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import SocialLinks from "../social-links/SocialLinks.component";
 
 function Hero() {
-  const myElement = useRef();
+  const myElement = useRef<HTMLSpanElement>(null);
   useEffect(() => {
     const skills = [
       "Web Developer",
@@ -14,7 +14,8 @@ function Hero() {
       "SQL Developer",
       "Open Source Developer",
     ];
-    init(myElement.current, { showCursor: true, strings: skills });
+    if (myElement.current !== null)
+      init(myElement.current, { showCursor: true, strings: skills });
   }, []);
   return (
     <div className="hero-container">

@@ -1,5 +1,11 @@
 import "./socialLink.styles.scss";
-const SocialLink = ({ name, icon, link }) => {
+
+interface Iprops {
+  name: string;
+  icon: string;
+  link: string;
+}
+const SocialLink: React.FC<Iprops> = ({ name, icon, link }) => {
   return (
     <div className="badge">
       <a href={link} target="_blank" rel="noreferrer" className="badge__link">

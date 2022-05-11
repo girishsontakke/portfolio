@@ -1,0 +1,25 @@
+.wrapper {
+  width: 100%;
+  perspective: 100%;
+  cursor: pointer;
+
+  &__card {
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    &__frontComponent,
+    &__backComponent {
+      position: absolute;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      width: 100%;
+    }
+    &__backComponent {
+      transform: rotateY(180deg);
+    }
+  }
+
+  &:hover &__card {
+    transform: rotateY(180deg);
+  }
+}

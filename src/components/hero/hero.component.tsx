@@ -10,8 +10,7 @@ function Hero() {
       "Web Developer",
       "ReactJs Developer",
       "Django Developer",
-      "NodeJs Developer",
-      "SQL Developer",
+      "Problem Solver",
       "Open Source Developer",
     ];
     if (myElement.current !== null)

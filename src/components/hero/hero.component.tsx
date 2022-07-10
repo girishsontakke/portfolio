@@ -9,6 +9,7 @@ function Hero() {
     const skills = [
       "Web Developer",
       "ReactJs Developer",
+      "React Native Developer",
       "Django Developer",
       "Problem Solver",
       "Open Source Developer"

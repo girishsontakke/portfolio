@@ -11,10 +11,9 @@ function Hero() {
       "ReactJs Developer",
       "Django Developer",
       "Problem Solver",
-      "Open Source Developer",
+      "Open Source Developer"
     ];
-    if (myElement.current !== null)
-      init(myElement.current, { showCursor: true, strings: skills });
+    if (myElement.current !== null) init(myElement.current, { showCursor: true, strings: skills });
   }, []);
   return (
     <div className="hero-container">
@@ -27,11 +26,7 @@ function Hero() {
           </h2>
         </div>
         <div className="hero__right">
-          <img
-            src="./assets/images/hero-section.svg"
-            alt="owner"
-            className="hero__right__image"
-          />
+          <img src="./assets/images/hero-section.svg" alt="owner" className="hero__right__image" />
         </div>
       </div>
       <SocialLinks />

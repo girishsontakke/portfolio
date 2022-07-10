@@ -58,19 +58,21 @@
   }
 
   @include small {
-      height: 80vh;
-      .hero{
-          &__left {
-              width: 90%;
-              margin: auto;
+    height: 80vh;
+    .hero {
+      &__left {
+        width: 90%;
+        margin: auto;
 
-              &__greet, &__name, .typewriter{
-                  font-size: 1.5rem;
-              }
-          }
-          &__right {
-              display: none;
-          }
+        &__greet,
+        &__name,
+        .typewriter {
+          font-size: 1.5rem;
+        }
       }
+      &__right {
+        display: none;
+      }
+    }
   }
 }

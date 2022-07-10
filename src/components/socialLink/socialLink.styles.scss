@@ -8,6 +8,10 @@
     justify-content: center;
     color: rgb(156, 219, 235);
     text-decoration: none;
+
+    &__image {
+      height: 35px;
+    }
   }
   &:hover {
     transform: translateY(-5px);

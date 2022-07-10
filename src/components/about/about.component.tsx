@@ -1,3 +1,4 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import "./about.styles.scss";
 import GirishImage from "./images/Girish.jpg";
 
@@ -5,7 +6,7 @@ const About = () => {
   return (
     <div className="about">
       <div className="about__left">
-        <img src={GirishImage} alt="" />
+        <LazyLoadImage src={GirishImage} alt="" />
       </div>
       <div className="about__right">
         <h1 className="about__right__heading">About Me</h1>
